@@ -4,20 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人网站</title>
-    <style>
-        /* 这里写 CSS 样式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+ <style>
+    /* 全页图片背景，带深色遮罩以保证文字可读 */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;                 /* 文字白色，便于在暗背景上阅读 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("images/photo1.jpg");  /* 相对路径：images/photo1.jpg */
+      background-size: cover;      /* 拉伸并裁剪填满整个屏幕 */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;/* 背景固定（滚动时不动） */
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.06); /* 轻微玻璃感 */
+      backdrop-filter: blur(4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 { margin-top: 0; font-size: 2.4rem; color: #fff; }
+    p  { color: #e6e6e6; font-size: 1.05rem; line-height: 1.6; }
+    a.button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #222;
+      background: #ffd166;
+      font-weight: 600;
+    }
+
+    /* 手机适配 */
+    @media (max-width: 600px) {
+      .card { padding: 20px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
 </head>
 <body>
     <h1>这是小司的世界</h1>
