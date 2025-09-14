@@ -1,66 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
- <style>
-    /* 全页图片背景，带深色遮罩以保证文字可读 */
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人网站</title>
+  <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      color: #fff;                 /* 文字白色，便于在暗背景上阅读 */
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      background-image:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("images/photo1.jpg");  /* 相对路径：images/photo1.jpg */
-      background-size: cover;      /* 拉伸并裁剪填满整个屏幕 */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;/* 背景固定（滚动时不动） */
-      padding: 40px;
-      box-sizing: border-box;
+
+      /* 背景图设置 */
+      background-image: url('images/photo1.jpg.jpg'); /* 改成你的图片路径 */
+      background-size: cover;       /* 背景铺满整 个屏幕 */
+      background-position: center;  /* 居中 */
+      background-repeat: no-repeat; /* 不要重复 */
+      height: 100vh; /* 页面最小高度 = 100%视口高度 */
+      color: white;
     }
 
-    .card {
-      max-width: 900px;
-      padding: 40px;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.06); /* 轻微玻璃感 */
-      backdrop-filter: blur(4px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-    }
-
-    h1 { margin-top: 0; font-size: 2.4rem; color: #fff; }
-    p  { color: #e6e6e6; font-size: 1.05rem; line-height: 1.6; }
-    a.button {
+    .content {
+      background-color: rgba(0,0,0,0.5); /* 半透明黑底，避免文字看不清 */
+      padding: 20px;
+      border-radius: 10px;
       display: inline-block;
-      margin-top: 18px;
-      padding: 10px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #222;
-      background: #ffd166;
-      font-weight: 600;
-    }
-
-    /* 手机适配 */
-    @media (max-width: 600px) {
-      .card { padding: 20px; }
-      h1 { font-size: 1.6rem; }
+      margin-top: 100px;
     }
   </style>
 </head>
 <body>
+  <div class="content">
     <h1>这是小司的世界</h1>
-    <p>欢迎来到我的第一个网站！我是司语涵</p>
+    <p>欢迎你进入我的生活！</p>
     <p>哈哈哈哈哈哈</p>
-    <img src="https://ohhh102.github.io/images/photo1.jpg.jpg">
+    <a href="gallery.html" class="btn">关于我</a>
+    <iframe name="content-frame" style="border:none;"></iframe>
+  </div>
 </body>
 </html>

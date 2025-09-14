@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", sans-serif;
+  background-image: url("images/bg.jpg"); /* 背景图 */
+  background-repeat: no-repeat;   /* 背景不平铺 */
+  background-size: cover;   
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  padding: 50px;
+  background: rgba(0,0,0,0.5); /* 半透明背景，让文字更清晰 */
+  display: inline-block;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff6600;
+  color: rgb(49, 183, 64);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #ff3300;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column; /* 竖向排列 */
+  align-items: center;    /* 居中 */
+  gap: 20px;
+  margin: 30px;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
