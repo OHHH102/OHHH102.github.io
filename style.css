@@ -15,7 +15,7 @@ body {
   background: rgba(0,0,0,0.5); /* 半透明背景，让文字更清晰 */
   display: inline-block;
   border-radius: 15px;
-  margin-top: 100px;
+  margin-top: 100px; 
 }
 
 .btn {
@@ -46,3 +46,20 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px black;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  height: 100vh;           /* 撑满屏幕 */
+  background: #000;
+}
+
+video {
+  width: 400px;     /* 固定宽度 */
+  height: 225px;    /* 固定高度（16:9 比例，可以改） */
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
